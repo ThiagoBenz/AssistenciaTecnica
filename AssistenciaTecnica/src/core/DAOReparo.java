@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 public class DAOReparo implements IDataAccessObject<Reparo> {
 
+    ArrayList<Reparo> reparos;
+
+    public DAOReparo(ArrayList<Reparo> reparos) {
+        this.reparos = reparos;
+    }
+
     @Override
     public void create(Reparo obj) {
         // TODO Auto-generated method stub

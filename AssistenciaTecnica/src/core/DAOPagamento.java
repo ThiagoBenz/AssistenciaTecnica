@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 public class DAOPagamento implements IDataAccessObject<Pagamento> {
 
+    ArrayList<Pagamento> pagamentos;
+
+    public DAOPagamento(ArrayList<Pagamento> pagamentos) {
+        this.pagamentos = pagamentos;
+    }
+
     @Override
     public void create(Pagamento obj) {
         // TODO Auto-generated method stub
